@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ProAula3s">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/ProAula3s.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
