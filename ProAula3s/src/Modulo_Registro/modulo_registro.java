@@ -270,25 +270,36 @@ public class modulo_registro extends javax.swing.JPanel {
         String edad = caja_edad.getText();
 
         if (documento.isEmpty() || nombre.isEmpty() || tipomascota.isEmpty()
-                || raza.isEmpty() || peso.isEmpty() || sexo.isEmpty() 
+                || raza.isEmpty() || peso.isEmpty() || sexo.isEmpty()
                 || edad.isEmpty()) {
             JOptionPane.showMessageDialog(null,
                     "DEBE COMPLETAR LOS DATOS");
             // Si alguno de los campos está vacío, muestra un mensaje 
             //emergente que indica que el usuario debe completar los datos.  
-        }else{
+        } else if (nombre.matches(".*\\d.*") 
+                || tipomascota.matches(".*\\d.*") 
+                || raza.matches(".*\\d.*") 
+                || sexo.matches(".*\\d.*")) {
+            JOptionPane.showMessageDialog(null,
+                    "El nombre de mascota, tipo de mascota, raza y "
+                            + "sexo no pueden contener números. Por favor, "
+                            + "inténtelo de nuevo.");
+            // Si alguno de los campos de nombre de mascota,
+            //tipo de mascota, raza o sexo contiene números, muestra un 
+            //mensaje emergente que indica que el usuario debe corregir los datos.
+        } else {
             try {
-                String consultar =
-                        "INSERT INTO proyectodeaulads3.registro_mascotas"
+                String consultar
+                        = "INSERT INTO proyectodeaulads3.registro_mascotas"
                         + "(ndocumento,nombre,tipo_mascota,raza,sexo,peso,edad)"
-                        + "VALUES('"+documento+"','"+nombre+"','"+tipomascota+""
-                        + "','"+raza+"','"+sexo+"','"+peso+"','"+edad+"')";
-                        java.sql.PreparedStatement ps =
-                                cnn.clientPrepareStatement(consultar);
-                        ps.executeUpdate();
-                        limpiar();
-                        JOptionPane.showMessageDialog(null, 
-                                "DATOS GUARDADOS CORRECTAMENTE");
+                        + "VALUES('" + documento + "','" + nombre + "','" + tipomascota + ""
+                        + "','" + raza + "','" + sexo + "','" + peso + "','" + edad + "')";
+                java.sql.PreparedStatement ps
+                        = cnn.clientPrepareStatement(consultar);
+                ps.executeUpdate();
+                limpiar();
+                JOptionPane.showMessageDialog(null,
+                        "DATOS GUARDADOS CORRECTAMENTE");
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null,
                         "NO SE PUDO GUARDAR LOS DATOS" + e);
@@ -310,7 +321,7 @@ public class modulo_registro extends javax.swing.JPanel {
         // Establece el color del texto de la etiqueta en blanco
         guardartxt.setForeground(Color.white);
     }//GEN-LAST:event_guardartxtMouseExited
-    void limpiar(){
+    void limpiar() {
         caja_N_documento.setText("");
         caja_nombre.setText("");
         caja_tipo_mascota.setText("");

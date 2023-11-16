@@ -15,17 +15,17 @@ import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 
 public class RegistroU extends javax.swing.JFrame {
-    
-   /* Se crea una nueva instancia de la clase ConexionMysql 
+
+    /* Se crea una nueva instancia de la clase ConexionMysql 
     y se asigna a la variable 'con'*/
-   ConexionMysql con = new ConexionMysql();
-   /* Se utiliza el método 'conectar()' de la instancia 'con' 
+    ConexionMysql con = new ConexionMysql();
+    /* Se utiliza el método 'conectar()' de la instancia 'con' 
    para obtener una conexión y se asigna a la variable 'cnn'*/
-   ConnectionImpl cnn = con.conectar();
-    
+    ConnectionImpl cnn = con.conectar();
+
     //Constructor de la clase
     public RegistroU() {
-        
+
         //Inicializa los componentes de la interfaz gráfica
         initComponents();
         /* Establecer el icono de la ventana en la imagen devuelta 
@@ -34,11 +34,11 @@ public class RegistroU extends javax.swing.JFrame {
         //Establece la ubicación de la ventana en el centro de la pantalla
         this.setLocationRelativeTo(null);
     }
+
     // Método que devuelve la imagen del ícono de la aplicación
     @Override
     public Image getIconImage() {
-        Image retValue = Toolkit.getDefaultToolkit().getImage
-        (ClassLoader.getSystemResource("IMAGENES/LogoPrograma.png"));
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("IMAGENES/LogoPrograma.png"));
         return retValue;
     }
 
@@ -250,17 +250,11 @@ public class RegistroU extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RegistroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegistroMouseClicked
-        // Obtiene el texto ingresado en el campo de nombre
         String nombre = Caja_Nombre.getText();
-        // Obtiene el texto ingresado en el campo de apellido
         String apellido = Caja_Apellido.getText();
-        // Obtiene el texto ingresado en el campo de edad
         String edad = Caja_edad.getText();
-        // Obtiene el texto ingresado en el campo de nombreu
         String nombreu = Caja_Usuario.getText();
-        // Obtiene el texto ingresado en el campo de correo
         String correo = Caja_Correo.getText();
-        // Obtiene el texto ingresado en el campo de contrasena
         String contrasena = Caja_Contraseña.getText();
 
         if (nombre.isEmpty() || apellido.isEmpty() || nombreu.isEmpty()
@@ -269,6 +263,15 @@ public class RegistroU extends javax.swing.JFrame {
                     "DEBE COMPELTAR LOS DATOS");
             // Si alguno de los campos está vacío, muestra un mensaje 
             //emergente que indica que el usuario debe completar los datos.
+        } else if (nombre.matches(".*\\d.*") 
+                || apellido.matches(".*\\d.*") 
+                || nombreu.matches(".*\\d.*")) {
+            JOptionPane.showMessageDialog(null,
+                    "El nombre, apellido y nombre de usuario no pueden"
+                            + " contener números. Por favor, inténtelo de nuevo.");
+            // Si alguno de los campos de nombre, apellido o nombre de usuario 
+            //contiene números, muestra un mensaje emergente que indica que 
+            //el usuario debe corregir los datos.
         } else {
             try {
                 // Prepara una sentencia SQL 
@@ -284,9 +287,9 @@ public class RegistroU extends javax.swing.JFrame {
                         + "'" + nombreu + "','" + correo + "','" + contrasena + "')";
                 java.sql.PreparedStatement ps = cnn.clientPrepareStatement(consultar);
                 ps.executeUpdate();
-                // Si todos los campos están completos, se ejecuta la consulta 
-                //y se muestra un mensaje emergente que indica que los datos 
-                //se han guardado correctamente.
+                // Si todos los campos están completos y no contienen números, 
+                //se ejecuta la consulta y se muestra un mensaje emergente 
+                //que indica que los datos se han guardado correctamente.
                 limpiar();
                 JOptionPane.showMessageDialog(null,
                         "DATOS GUARDADOS CORRECTAMENTE");
@@ -300,18 +303,17 @@ public class RegistroU extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_RegistroMouseClicked
-    
 
     // Se define el método 'limpiar'
     void limpiar() {
-    // Se establece el texto de las cajas de texto correspondientes en una 
-    //cadena vacía para borrar su contenido
-    Caja_Nombre.setText("");
-    Caja_Apellido.setText("");
-    Caja_edad.setText("");
-    Caja_Usuario.setText("");
-    Caja_Correo.setText("");
-    Caja_Contraseña.setText("");
+        // Se establece el texto de las cajas de texto correspondientes en una 
+        //cadena vacía para borrar su contenido
+        Caja_Nombre.setText("");
+        Caja_Apellido.setText("");
+        Caja_edad.setText("");
+        Caja_Usuario.setText("");
+        Caja_Correo.setText("");
+        Caja_Contraseña.setText("");
     }
 
 
@@ -330,16 +332,15 @@ public class RegistroU extends javax.swing.JFrame {
     }//GEN-LAST:event_RegistroMouseExited
 
     private void Iniciar_SesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Iniciar_SesionMouseClicked
-    // Se crea una nueva instancia de la clase 
-    //LoginUsuarios y se asigna a la variable 'frame'
-    LoginUsuarios frame = new LoginUsuarios();
-    // Se establece la visibilidad del objeto 'frame' en 'true'
-    frame.setVisible(true);
-    // Se elimina la ventana actual (en este caso,
-    //'this' hace referencia a la ventana actual)
-    this.dispose();
+        // Se crea una nueva instancia de la clase 
+        //LoginUsuarios y se asigna a la variable 'frame'
+        LoginUsuarios frame = new LoginUsuarios();
+        // Se establece la visibilidad del objeto 'frame' en 'true'
+        frame.setVisible(true);
+        // Se elimina la ventana actual (en este caso,
+        //'this' hace referencia a la ventana actual)
+        this.dispose();
     }//GEN-LAST:event_Iniciar_SesionMouseClicked
-
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

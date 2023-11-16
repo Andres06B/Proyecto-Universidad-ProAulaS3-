@@ -202,13 +202,13 @@
                                       <Component id="caja_peso" min="-2" pref="175" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="tipo_consulta" min="-2" pref="172" max="-2" attributes="0"/>
+                              <Component id="Consultaasolicitar" min="-2" pref="172" max="-2" attributes="0"/>
                               <Component id="tipo_mascota" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
                               <Component id="edad" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
                               <Component id="motivo_consulta" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
                               <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="caja_edad" alignment="0" pref="199" max="32767" attributes="0"/>
-                                  <Component id="caja_tipo_consulta" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Consulta_a_solicitar" alignment="0" max="32767" attributes="0"/>
                                   <Component id="caja_motivo_consulta" alignment="0" max="32767" attributes="0"/>
                                   <Component id="caja_tipo_mascota" alignment="0" max="32767" attributes="0"/>
                                   <Component id="caja_nombre_mascota" alignment="0" max="32767" attributes="0"/>
@@ -287,9 +287,9 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="caja_motivo_consulta" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="tipo_consulta" min="-2" max="-2" attributes="0"/>
+                      <Component id="Consultaasolicitar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="caja_tipo_consulta" min="-2" max="-2" attributes="0"/>
+                      <Component id="Consulta_a_solicitar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="23" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -395,7 +395,7 @@
                 <Property name="text" type="java.lang.String" value="Motivo de consulta"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="tipo_consulta">
+            <Component class="javax.swing.JLabel" name="Consultaasolicitar">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Rockwell" size="18" style="0"/>
@@ -403,7 +403,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Tipo de consulta"/>
+                <Property name="text" type="java.lang.String" value="Consulta a solicitar"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="Caja_nombreDue&#xf1;o">
@@ -496,7 +496,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="caja_tipo_consulta">
+            <Component class="javax.swing.JTextField" name="Consulta_a_solicitar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>

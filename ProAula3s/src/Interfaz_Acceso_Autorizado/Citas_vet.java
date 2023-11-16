@@ -67,7 +67,7 @@ public class Citas_vet extends javax.swing.JFrame {
         peso = new javax.swing.JLabel();
         edad = new javax.swing.JLabel();
         motivo_consulta = new javax.swing.JLabel();
-        tipo_consulta = new javax.swing.JLabel();
+        Consultaasolicitar = new javax.swing.JLabel();
         Caja_nombreDueño = new javax.swing.JTextField();
         caja_identificacion = new javax.swing.JTextField();
         caja_telefono = new javax.swing.JTextField();
@@ -77,7 +77,7 @@ public class Citas_vet extends javax.swing.JFrame {
         caja_peso = new javax.swing.JTextField();
         caja_edad = new javax.swing.JTextField();
         caja_motivo_consulta = new javax.swing.JTextField();
-        caja_tipo_consulta = new javax.swing.JTextField();
+        Consulta_a_solicitar = new javax.swing.JTextField();
         Caja_id = new javax.swing.JTextField();
         Id = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -176,9 +176,9 @@ public class Citas_vet extends javax.swing.JFrame {
         motivo_consulta.setForeground(new java.awt.Color(255, 255, 255));
         motivo_consulta.setText("Motivo de consulta");
 
-        tipo_consulta.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
-        tipo_consulta.setForeground(new java.awt.Color(255, 255, 255));
-        tipo_consulta.setText("Tipo de consulta");
+        Consultaasolicitar.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
+        Consultaasolicitar.setForeground(new java.awt.Color(255, 255, 255));
+        Consultaasolicitar.setText("Consulta a solicitar");
 
         Caja_nombreDueño.setBackground(new java.awt.Color(255, 255, 255));
         Caja_nombreDueño.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
@@ -207,8 +207,8 @@ public class Citas_vet extends javax.swing.JFrame {
         caja_motivo_consulta.setBackground(new java.awt.Color(255, 255, 255));
         caja_motivo_consulta.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
 
-        caja_tipo_consulta.setBackground(new java.awt.Color(255, 255, 255));
-        caja_tipo_consulta.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
+        Consulta_a_solicitar.setBackground(new java.awt.Color(255, 255, 255));
+        Consulta_a_solicitar.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
 
         Caja_id.setBackground(new java.awt.Color(255, 255, 255));
         Caja_id.setEnabled(false);
@@ -233,13 +233,13 @@ public class Citas_vet extends javax.swing.JFrame {
                             .addGroup(espacio_datosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(peso, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(caja_peso, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addComponent(tipo_consulta, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Consultaasolicitar, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(tipo_mascota, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(motivo_consulta, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(espacio_datosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(caja_edad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
-                            .addComponent(caja_tipo_consulta, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Consulta_a_solicitar, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(caja_motivo_consulta, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(caja_tipo_mascota, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(caja_nombre_mascota, javax.swing.GroupLayout.Alignment.LEADING))
@@ -303,9 +303,9 @@ public class Citas_vet extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(caja_motivo_consulta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tipo_consulta)
+                .addComponent(Consultaasolicitar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(caja_tipo_consulta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Consulta_a_solicitar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -568,7 +568,7 @@ public class Citas_vet extends javax.swing.JFrame {
             caja_peso.setText(peso);
             caja_edad.setText(edad);
             caja_motivo_consulta.setText(motivoconsulta);
-            caja_tipo_consulta.setText(tipoconsulta);
+            Consulta_a_solicitar.setText(tipoconsulta);
             
         }
     }//GEN-LAST:event_tablacitasMouseClicked
@@ -611,6 +611,8 @@ public class Citas_vet extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Caja_id;
     private javax.swing.JTextField Caja_nombreDueño;
+    private javax.swing.JTextField Consulta_a_solicitar;
+    private javax.swing.JLabel Consultaasolicitar;
     private javax.swing.JLabel Id;
     private javax.swing.JLabel Identificacion;
     private javax.swing.JLabel Nombre_Dueño;
@@ -628,7 +630,6 @@ public class Citas_vet extends javax.swing.JFrame {
     private javax.swing.JTextField caja_peso;
     private javax.swing.JTextField caja_sexo;
     private javax.swing.JTextField caja_telefono;
-    private javax.swing.JTextField caja_tipo_consulta;
     private javax.swing.JTextField caja_tipo_mascota;
     private javax.swing.JLabel edad;
     private javax.swing.JLabel eliminar;
@@ -645,7 +646,6 @@ public class Citas_vet extends javax.swing.JFrame {
     private javax.swing.JLabel sexo;
     private javax.swing.JTable tablacitas;
     private javax.swing.JLabel telefono;
-    private javax.swing.JLabel tipo_consulta;
     private javax.swing.JLabel tipo_mascota;
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
@@ -692,46 +692,55 @@ public class Citas_vet extends javax.swing.JFrame {
 
     }
 
-    private void Agregar() {
-        //Obtención de Datos desde Campos de Texto
-        String dueño = Caja_nombreDueño.getText();
-        String identificacion = caja_identificacion.getText();
-        String telefono = caja_telefono.getText();
-        String mascota = caja_nombre_mascota.getText();
-        String tipomascota = caja_tipo_mascota.getText();
-        String sexo = caja_sexo.getText();
-        String peso = caja_peso.getText();
-        String edad = caja_edad.getText();
-        String motivoconsulta = caja_motivo_consulta.getText();
-        String tipoconsulta = caja_tipo_consulta.getText();
-        try {
-            //Validación de Campos Vacíos
-            if (dueño.isEmpty() || identificacion.isEmpty()
-                    || telefono.isEmpty() || mascota.isEmpty()
-                    || tipomascota.isEmpty() || sexo.isEmpty()
-                    || peso.isEmpty() || edad.isEmpty()
-                    || motivoconsulta.isEmpty() || tipoconsulta.isEmpty()) {
-                JOptionPane.showMessageDialog(null,
-                        "Los campos estas vacios");
-            } else {
-                    // procede a la inserción en la base de datos
-                String sql = "insert into proyectodeaulads3.agendarcita(dueno,"
-                        + "identificacion,telefono,mascota,tipomascota,"
-                        + "sexo,peso,edad,motivoconsulta,"
-                        + "tipoconsulta)values ('" + dueño + "',"
-                        + "'" + identificacion + "','" + telefono + "','" + mascota + "',"
-                        + "'" + tipomascota + "','" + sexo + "','" + peso + "','" + edad + "',"
-                        + "'" + motivoconsulta + "','" + tipoconsulta + "')";
-                st = (Statement) cn.createStatement();
-                st.executeUpdate(sql);
-                JOptionPane.showMessageDialog(null,
-                        "Cita Registrada");
-
-            }
-        } catch (Exception e) {
-            limpiarTabla();//limpia los datos
+private void Agregar() {
+    //Obtención de Datos desde Campos de Texto
+    String dueño = Caja_nombreDueño.getText();
+    String identificacion = caja_identificacion.getText();
+    String telefono = caja_telefono.getText();
+    String mascota = caja_nombre_mascota.getText();
+    String tipomascota = caja_tipo_mascota.getText();
+    String sexo = caja_sexo.getText();
+    String peso = caja_peso.getText();
+    String edad = caja_edad.getText();
+    String motivoconsulta = caja_motivo_consulta.getText();
+    String tipoconsulta = Consulta_a_solicitar.getText();
+    try {
+        //Validación de Campos Vacíos y de no aceptar números
+        if (dueño.isEmpty() || identificacion.isEmpty()
+                || telefono.isEmpty() || mascota.isEmpty()
+                || tipomascota.isEmpty() || sexo.isEmpty()
+                || peso.isEmpty() || edad.isEmpty()
+                || motivoconsulta.isEmpty() || tipoconsulta.isEmpty()) {
+            JOptionPane.showMessageDialog(null,
+                    "Los campos están vacíos");
+        } else if (dueño.matches(".*\\d.*") 
+                || mascota.matches(".*\\d.*") 
+                || tipomascota.matches(".*\\d.*") 
+                || motivoconsulta.matches(".*\\d.*") 
+                || tipoconsulta.matches(".*\\d.*")) {
+            JOptionPane.showMessageDialog(null,
+                    "El nombre de dueño, nombre de mascota,"
+                            + " tipo de mascota, motivo de consulta y "
+                            + "consulta a solicitar no pueden contener números."
+                            + " Por favor, inténtelo de nuevo.");
+        } else {
+            // procede a la inserción en la base de datos
+            String sql = "insert into proyectodeaulads3.agendarcita(dueno,"
+                    + "identificacion,telefono,mascota,tipomascota,"
+                    + "sexo,peso,edad,motivoconsulta,"
+                    + "tipoconsulta)values ('" + dueño + "',"
+                    + "'" + identificacion + "','" + telefono + "','" + mascota + "',"
+                    + "'" + tipomascota + "','" + sexo + "','" + peso + "','" + edad + "',"
+                    + "'" + motivoconsulta + "','" + tipoconsulta + "')";
+            st = (Statement) cn.createStatement();
+            st.executeUpdate(sql);
+            JOptionPane.showMessageDialog(null,
+                    "Cita Registrada");
         }
+    } catch (Exception e) {
+        limpiarTabla();//limpia los datos
     }
+}
 
     void Nuevo() {
         //coloca el foco en el campo id
@@ -746,7 +755,7 @@ public class Citas_vet extends javax.swing.JFrame {
         caja_peso.setText("");
         caja_edad.setText("");
         caja_motivo_consulta.setText("");
-        caja_tipo_consulta.setText("");
+        Consulta_a_solicitar.setText("");
     }
 
     void limpiarTabla() {
@@ -793,7 +802,7 @@ public class Citas_vet extends javax.swing.JFrame {
         String peso = caja_peso.getText();
         String edad = caja_edad.getText();
         String motivoconsulta = caja_motivo_consulta.getText();
-        String tipoconsulta = caja_tipo_consulta.getText();
+        String tipoconsulta = Consulta_a_solicitar.getText();
         try {
             //validacion de campos vacios
             if (dueño.isEmpty() || identificacion.isEmpty()
