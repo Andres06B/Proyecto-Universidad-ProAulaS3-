@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 
 public class ConexionMysql {
 
+    //Esta clase es de conexion a base de datos
     // variable para almacenar la conexion establecida a base de datos
     ConnectionImpl con;
 
