@@ -16,6 +16,7 @@ que generan eventos a intervalos regulares.*/
 public class Cargando extends javax.swing.JFrame {
 
     //Variable booleana para verificar si JFrame2 ya ha sido abierto
+    // Hola Mundo
     private boolean isCargandoOpened = false;
 
     // Método para cambiar a JFrame Inicio
