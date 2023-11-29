@@ -117,7 +117,7 @@ public class Principal extends javax.swing.JFrame {
         Atencion.setFont(new java.awt.Font("Roboto Slab ExtraBold", 0, 20)); // NOI18N
         Atencion.setForeground(new java.awt.Color(255, 255, 255));
         Atencion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Atencion.setText("Atencion Usuarios");
+        Atencion.setText("Administrador");
         Atencion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Atencion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

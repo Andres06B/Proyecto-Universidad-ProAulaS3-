@@ -27,7 +27,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="Panel_login" min="-2" max="-2" attributes="0"/>
+          <Component id="Panel_login" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -47,29 +47,28 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <Component id="Imagendefondo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="140" pref="140" max="-2" attributes="0"/>
                                   <Component id="Titulo" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                                  <Component id="Barra_Login" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="Barra_Login" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="58" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
-                          <Component id="Icono" min="-2" pref="40" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="180" pref="180" max="-2" attributes="0"/>
+                          <Component id="Icono" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="texto_de_icono" min="-2" pref="90" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="btn_Menu" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -77,21 +76,20 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="Imagendefondo" min="-2" max="-2" attributes="0"/>
+              <Component id="Imagendefondo" min="-2" pref="450" max="-2" attributes="0"/>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Icono" min="-2" max="-2" attributes="0"/>
                               <Component id="texto_de_icono" min="-2" pref="40" max="-2" attributes="0"/>
-                              <Component id="Icono" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="btn_Menu" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="Titulo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                   <Component id="Barra_Login" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
