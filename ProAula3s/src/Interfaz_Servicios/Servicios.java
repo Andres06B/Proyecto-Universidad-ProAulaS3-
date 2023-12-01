@@ -361,7 +361,7 @@ public class Servicios extends javax.swing.JFrame {
                 .addGroup(Panel_DiagnosticoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(texto1)
                     .addComponent(imagen))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab1", Panel_Diagnostico);
@@ -399,7 +399,7 @@ public class Servicios extends javax.swing.JFrame {
                 .addGroup(Panel_atencionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(texto2)
                     .addComponent(imagen2))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab2", Panel_atencion);
@@ -437,7 +437,7 @@ public class Servicios extends javax.swing.JFrame {
                 .addGroup(panel_hospitalizacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(texto3)
                     .addComponent(imagen3))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab3", panel_hospitalizacion);
@@ -475,7 +475,7 @@ public class Servicios extends javax.swing.JFrame {
                 .addGroup(panel_medicinaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(texto4)
                     .addComponent(imagen4))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab4", panel_medicina);
@@ -513,7 +513,7 @@ public class Servicios extends javax.swing.JFrame {
                 .addGroup(panel_sala_bellezaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(texto5)
                     .addComponent(imagen5))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab5", panel_sala_belleza);
@@ -551,7 +551,7 @@ public class Servicios extends javax.swing.JFrame {
                 .addGroup(panel_serviciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(texto7)
                     .addComponent(titulo7))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab6", panel_servicios);

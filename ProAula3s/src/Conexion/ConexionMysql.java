@@ -25,7 +25,7 @@ public class ConexionMysql {
                     + "DE DATOS A SIDO EXITOSA");
         } catch (Exception e) {
             // En caso de error, imprimir un mensaje de error y la excepción
-            System.out.println("ERROR AL CONECATR A LA BASE DE DATOS" + e);
+            System.out.println("ERROR AL CONECTAR A LA BASE DE DATOS" + e);
         }
         // Retornar la conexión establecida
         return con;

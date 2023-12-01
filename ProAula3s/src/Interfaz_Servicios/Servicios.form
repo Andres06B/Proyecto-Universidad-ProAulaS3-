@@ -483,7 +483,7 @@
                               <Component id="texto1" min="-2" max="-2" attributes="0"/>
                               <Component id="imagen" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -556,7 +556,7 @@
                               <Component id="texto2" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="imagen2" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -629,7 +629,7 @@
                               <Component id="texto3" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="imagen3" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -702,7 +702,7 @@
                               <Component id="texto4" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="imagen4" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -775,7 +775,7 @@
                               <Component id="texto5" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="imagen5" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -848,7 +848,7 @@
                               <Component id="texto7" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="titulo7" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
